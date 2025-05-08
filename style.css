@@ -1,0 +1,89 @@
+/* Reset default styles to create a consistent baseline */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the body: Use a neutral background and center content */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color:  pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Center content vertically */
+  }
+  
+  /* Style for the main stopwatch container */
+  .stopwatch-container {
+    text-align: center;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Style for displaying the time in large, readable format */
+  .time-display {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Controls section where buttons are located */
+  .controls {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for buttons: a simple yet clean look */
+  button {
+    background-color: #00796b; /* Teal background */
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+  }
+  
+  /* Button hover effect: Darker teal on hover */
+  button:hover {
+    background-color: #004d40;
+  }
+  
+  /* Section to display lap times */
+  .lap-times {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  /* Header for lap times */
+  .lap-times h3 {
+    margin-bottom: 10px;
+  }
+  
+  /* List for lap times, styled with no bullets */
+  #lap-list {
+    list-style-type: none;
+  }
+  
+  /* Style for each lap item */
+  .lap-item {
+    background-color: #e0f7fa; /* Light cyan background for lap times */
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .lap-item span {
+    font-weight: bold;
+    color: #00796b; /* Dark teal color for lap times */
+  }
+  

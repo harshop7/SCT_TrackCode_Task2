@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stopwatch</title>
+  <!-- Link to external CSS for styling -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Main container for the stopwatch -->
+  <div class="stopwatch-container">
+    
+    <!-- Display the current time on the stopwatch -->
+    <div class="time-display">
+      <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+    </div>
+    
+    <!-- Control buttons to interact with the stopwatch -->
+    <div class="controls">
+      <!-- Start or Pause button -->
+      <button id="start-stop" onclick="startStop()">Start</button>
+      
+      <!-- Reset button -->
+      <button id="reset" onclick="resetStopwatch()">Reset</button>
+      
+      <!-- Lap button to record lap times -->
+      <button id="lap" onclick="recordLap()">Lap</button>
+    </div>
+    
+    <!-- Section for displaying recorded lap times -->
+    <div class="lap-times">
+      <h3>Lap Times:</h3>
+      <ul id="lap-list"></ul> <!-- List to hold lap times -->
+    </div>
+  </div>
+
+  <!-- External JS for stopwatch functionality -->
+  <script src="script.js"></script>
+</body>
+</html>
